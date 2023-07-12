@@ -4,6 +4,7 @@ import java.io.IOException;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 public class InvalidLoginTestCase_keyWordDriven extends BaseTest {
 
@@ -17,11 +18,12 @@ public class InvalidLoginTestCase_keyWordDriven extends BaseTest {
 		
 		for(int i=1;i<=rc;i++)
 		{
-			driver.findElement(By.name("username")).sendKeys(flib.readExcelData(EXCEL_PATH, "invalidcreds", i, 0));
+			WebElement usernameTextBox = driver.findElement(By.name("username"));
+			usernameTextBox.sendKeys(flib.readExcelData(EXCEL_PATH, "invalidcreds", i, 0));
 			driver.findElement(By.name("pwd")).sendKeys(flib.readExcelData(EXCEL_PATH, "invalidcreds", i, 1));
 			Thread.sleep(1000);
 			driver.findElement(By.id("loginButton")).click();
-			driver.findElement(By.name("username")).clear();
+			usernameTextBox.clear();
 		}
 		bt.closeBrowser();
 
