@@ -9,6 +9,7 @@
 /locators/
 /methodsOfWebDriver/
 /methodsOfWebElement/
+/pom/
 /popupHandling/
 /qsp/
 /readExcelData/
@@ -16,5 +17,6 @@
 /robotActions/
 /synchronization/
 /takeScreenshot/
+/testNGPackage/
 /xpath/
-/pom/
+/testNGExecution/

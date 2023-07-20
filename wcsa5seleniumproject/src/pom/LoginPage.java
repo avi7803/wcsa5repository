@@ -52,4 +52,13 @@ public class LoginPage {
 		passTB.sendKeys(validPassword);
 		loginButton.click();
 	}
+	
+	public void inValidLogin(String invalidUsername,String invalidPassword) throws InterruptedException
+	{
+		usnTB.sendKeys(invalidUsername);
+		passTB.sendKeys(invalidPassword);
+		loginButton.click();
+		Thread.sleep(1000);
+		usnTB.clear();
+	}
 }

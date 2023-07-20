@@ -1,0 +1,152 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 18 15:22:37 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (476 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNGExecution.TestMethod2.testMEthod4()'><b>testMEthod4</b><br>Test class: testNGExecution.TestMethod2<br/>
+<a href="#Output-555450891" onClick='toggleBox("Output-555450891", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-555450891" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-555450891">
+Thread Id of TestMethod4 : 21<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNGExecution.TestMethod2@2d7275fc</td></tr>
+<tr>
+<td title='testNGExecution.TestMethod2.testMEthod3()'><b>testMEthod3</b><br>Test class: testNGExecution.TestMethod2<br/>
+<a href="#Output-1116985671" onClick='toggleBox("Output-1116985671", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1116985671" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1116985671">
+Thread Id of TestMethod3 : 21<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNGExecution.TestMethod2@2d7275fc</td></tr>
+<tr>
+<td title='testNGExecution.TestMethod3.testMEthod5()'><b>testMEthod5</b><br>Test class: testNGExecution.TestMethod3<br/>
+<a href="#Output-1125014651" onClick='toggleBox("Output-1125014651", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1125014651" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1125014651">
+Thread Id of TestMethod5 : 20<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNGExecution.TestMethod3@72d1ad2e</td></tr>
+<tr>
+<td title='testNGExecution.TestMethod1.testMEthod1()'><b>testMEthod1</b><br>Test class: testNGExecution.TestMethod1<br/>
+<a href="#Output-1376390716" onClick='toggleBox("Output-1376390716", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1376390716" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1376390716">
+Thread Id of TestMethod1 : 19<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNGExecution.TestMethod1@37afeb11</td></tr>
+<tr>
+<td title='testNGExecution.TestMethod1.testMEthod2()'><b>testMEthod2</b><br>Test class: testNGExecution.TestMethod1<br/>
+<a href="#Output-2061794861" onClick='toggleBox("Output-2061794861", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2061794861" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2061794861">
+Thread Id of TestMethod : 19<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNGExecution.TestMethod1@37afeb11</td></tr>
+<tr>
+<td title='testNGExecution.TestMethod3.testMEthod6()'><b>testMEthod6</b><br>Test class: testNGExecution.TestMethod3<br/>
+<a href="#Output-2010254189" onClick='toggleBox("Output-2010254189", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2010254189" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2010254189">
+Thread Id of TestMethod6 : 20<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNGExecution.TestMethod3@72d1ad2e</td></tr>
+</table><p>
+</body>
+</html>
