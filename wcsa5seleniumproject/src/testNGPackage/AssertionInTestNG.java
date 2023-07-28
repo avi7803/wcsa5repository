@@ -21,24 +21,31 @@ public class AssertionInTestNG {
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	  
 	  driver.get("http://avinash-patil/login.do");
+	  
+	  //Store the title of the Login page in one variable
 	  String actualTitle = driver.getTitle();
 	  
 	  
 	  //Soft Assertion
 	  SoftAssert sa = new SoftAssert();
 	  
+	  //Compare stored title of login page with title of the page we got after going to the given URL automatically 
 	  sa.assertEquals(driver.getTitle(), actualTitle);
 	  
 	  driver.findElement(By.name("username")).sendKeys("admin");
 	  driver.findElement(By.name("pwd")).sendKeys("manager");
 	  driver.findElement(By.id("loginButton")).click();
 	  System.out.println("Title matched. Test case Passed!!!");
+	  
+	  //The assertAll() method is called to throw all the exceptions caught during the process of Selenium test automation execution. 
 	  sa.assertAll();
 	  
-	  
+	//===========================================================================================  
 	  //Hard Assertion
+	//Store the title of the Home page in one variable
 	  String homeActualTitle = driver.getTitle();
 	  
+	//Compare stored title Home page with title of the  page we got after login successfully using Assert class
 	 Assert.assertEquals(driver.getTitle(), homeActualTitle);
 	 
 	 Thread.sleep(2000);

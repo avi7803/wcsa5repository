@@ -24,9 +24,13 @@ public class ScreenshotUsingExplicitTypecasting {
         
         //Typecasting from WebDriver to TakesScreenshot
         TakesScreenshot ts = (TakesScreenshot) driver;
+        
         File src = ts.getScreenshotAs(OutputType.FILE);
         
+        //Path of destination where to copy screenshot taken
         File dest = new File("./screenshots/google2.png");
+        
+        //Copies the screenshot from source to destination
         Files.copy(src, dest);
         
         driver.close();
