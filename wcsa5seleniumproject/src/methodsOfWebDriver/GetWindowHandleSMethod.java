@@ -25,7 +25,7 @@ public class GetWindowHandleSMethod {
 		   
 		   Set<String> allHandles= driver.getWindowHandles();
 		   for (String wh : allHandles) {
-			   System.out.println("Address of Child Window : " + allHandles);
+			   System.out.println("Address of Child Window : " + wh);
 		}
 		   
 		   
