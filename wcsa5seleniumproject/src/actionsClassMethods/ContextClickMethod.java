@@ -21,7 +21,7 @@ public class ContextClickMethod {
 	   
 	   Actions act = new Actions(driver);
 	   Thread.sleep(3000);
-	   act.contextClick(target).perform();
+	   act.contextClick(target).perform();// It is for Right Click
 
 	}
 

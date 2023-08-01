@@ -15,5 +15,13 @@ public interface IAutoConstant {
 	String EDGE_PATH = "./drivers/msedgedriver.exe";
 	
 	String SCREENSHOT_PATH = "./screenshots/";
+	String VALID_SHEETNAME = "validcreds";
+	String INVALID_SHEETNAME = "invalidcreds";
+	String MANAGER_SHEETNAME = "managercreds";
+    String CUST_PROJSHEETNAME = "customer&projectcreds";
+    String TASK_SHEETNAME = "taskcreds";
+    String TEST_ENGSHEETNAME = "testengineercreds";
+	
+	
 	
 }
