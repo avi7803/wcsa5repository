@@ -11,16 +11,16 @@
       <![CDATA[Test successfull!!]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-08-02T00:47:09 IST" name="Default suite" finished-at="2023-08-02T00:47:33 IST" duration-ms="24552">
+  <suite started-at="2023-08-10T13:02:55 IST" name="Default suite" finished-at="2023-08-10T13:03:20 IST" duration-ms="24022">
     <groups>
     </groups>
-    <test started-at="2023-08-02T00:47:09 IST" name="Default test" finished-at="2023-08-02T00:47:33 IST" duration-ms="24552">
-      <class name="testPackage.CreateUserTestCase">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.CreateUserTestCase@5c6648b0]" started-at="2023-08-02T00:47:09 IST" name="setUp" finished-at="2023-08-02T00:47:17 IST" duration-ms="7683" status="PASS">
+    <test started-at="2023-08-10T13:02:55 IST" name="Default test" finished-at="2023-08-10T13:03:20 IST" duration-ms="24022">
+      <class name="testPackage.CreateTaskTestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testPackage.CreateTaskTestCase@5c6648b0]" started-at="2023-08-10T13:02:56 IST" name="setUp" finished-at="2023-08-10T13:03:04 IST" duration-ms="8273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="createUserMethod()[pri:0, instance:testPackage.CreateUserTestCase@5c6648b0]" started-at="2023-08-02T00:47:17 IST" name="createUserMethod" finished-at="2023-08-02T00:47:32 IST" duration-ms="15255" status="PASS">
+        <test-method signature="createTaskMethod()[pri:0, instance:testPackage.CreateTaskTestCase@5c6648b0]" started-at="2023-08-10T13:03:04 IST" name="createTaskMethod" finished-at="2023-08-10T13:03:18 IST" duration-ms="13997" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test start!!]]>
@@ -29,12 +29,12 @@
               <![CDATA[Test successfull!!]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createUserMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.CreateUserTestCase@5c6648b0]" started-at="2023-08-02T00:47:32 IST" name="tearDown" finished-at="2023-08-02T00:47:33 IST" duration-ms="1357" status="PASS">
+        </test-method> <!-- createTaskMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.CreateTaskTestCase@5c6648b0]" started-at="2023-08-10T13:03:18 IST" name="tearDown" finished-at="2023-08-10T13:03:20 IST" duration-ms="1514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testPackage.CreateUserTestCase -->
+      </class> <!-- testPackage.CreateTaskTestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

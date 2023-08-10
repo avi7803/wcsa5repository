@@ -25,7 +25,9 @@ public class TasksPage {
 	@FindBy(name = "task[0].markedToBeAddedToUserTasks") private WebElement AddToMyTimeTrackCheckBox;
 	@FindBy(xpath = "//input[@value='Create Tasks']") private WebElement CreateTaskButton;
 	@FindBy(xpath = "//input[@name='createProjectSubmit']") private WebElement CreateProjectButton;
+	@FindBy(xpath = "//input[@name='taskSelected[7]']") private WebElement TaskSelectCheckBox;
 	
+	@FindBy(xpath = "//input[@value='Complete Selected Tasks']") private WebElement CompleteSelectedTaskButton;
 	
 	//Initialization
 	public TasksPage(WebDriver driver)
@@ -95,6 +97,16 @@ public class TasksPage {
 		return CreateProjectButton;
 	}
 	
+	
+	public WebElement getTaskSelectCheckBox() {
+		return TaskSelectCheckBox;
+	}
+
+	
+	public WebElement getCompleteSelectedTaskButton() {
+		return CompleteSelectedTaskButton;
+	}
+
 	//Operational
 	public void createNewCustomer(String name) throws InterruptedException
 	{
@@ -130,6 +142,8 @@ public class TasksPage {
 		AddToMyTimeTrackCheckBox.click();
 		CreateTaskButton.click();
 	}
+	
+	
 	
 	
 	

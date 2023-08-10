@@ -19,6 +19,7 @@ public class UserPage {
 	@FindBy(xpath="//*[@id='right1']") private WebElement GenerateReport;
 	@FindBy(xpath="//*[@id='right7']") private WebElement ManageUsers;
 	@FindBy(xpath="//*[@id='right5']") private WebElement ManageBilling;
+	@FindBy(xpath="//*[@id='right13']") private WebElement ManageTask;
 	
 	@FindBy(xpath="//input[@type='submit']") private WebElement createUserButton;
 	@FindBy(xpath = "/HTML/BODY/DIV/FORM/TABLE/TBODY/TR[4]/TD/INPUT[2]") private WebElement cancelButton;
@@ -66,6 +67,11 @@ public class UserPage {
 
 	public WebElement getManageCust() {
 		return ManageCust;
+	}
+
+	
+	public WebElement getManageTask() {
+		return ManageTask;
 	}
 
 	public WebElement getGenerateReport() {
@@ -117,6 +123,7 @@ public class UserPage {
 		RetypePass.sendKeys(password);
 		firstName.sendKeys(firstname);
 		lastName.sendKeys(lastname);
+		ManageTask.click();
 		Thread.sleep(1000);
 		createUserButton.click();
 	}

@@ -23,9 +23,9 @@ public class CreateTaskTestCase extends BaseTest {
 	  Flib flib = new Flib();
 	  HomePage hm = new HomePage(driver);
 	  TasksPage ts = new TasksPage(driver);
-	  UserPage us =new UserPage(driver);
+	  //UserPage us =new UserPage(driver);
 	  
-	  lp.validLogin(flib.readPropertyData(PROP_PATH, "Username"), flib.readPropertyData(PROP_PATH, "Password"));
+	  lp.validLogin(flib.readExcelData(EXCEL_PATH, MANAGER_SHEETNAME, 1, 0),flib.readExcelData(EXCEL_PATH, MANAGER_SHEETNAME, 1, 1));
 	  
 	  
 	  
@@ -39,8 +39,9 @@ public class CreateTaskTestCase extends BaseTest {
 	  hm.clickOnUsersModule();
 	  
 	  //To create New Test Engineer
-	  us.createTestEngineer(flib.readExcelData(EXCEL_PATH, TEST_ENGSHEETNAME, 1, 0),flib.readExcelData(EXCEL_PATH, TEST_ENGSHEETNAME, 1, 1), flib.readExcelData(EXCEL_PATH, TEST_ENGSHEETNAME, 1, 2), flib.readExcelData(EXCEL_PATH, TEST_ENGSHEETNAME, 1, 3));
+	 // us.createTestEngineer(flib.readExcelData(EXCEL_PATH, TEST_ENGSHEETNAME, 1, 0),flib.readExcelData(EXCEL_PATH, TEST_ENGSHEETNAME, 1, 1), flib.readExcelData(EXCEL_PATH, TEST_ENGSHEETNAME, 1, 2), flib.readExcelData(EXCEL_PATH, TEST_ENGSHEETNAME, 1, 3));
 	  
+	 // hm.clickOnTimeTrack();
 	  
   }
 }

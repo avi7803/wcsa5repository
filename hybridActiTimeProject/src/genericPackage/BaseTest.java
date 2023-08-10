@@ -60,7 +60,7 @@ public class BaseTest implements IAutoConstant {
 		
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		
-		File dest = new File(SCREENSHOT_PATH);
+		File dest = new File(SCREENSHOT_PATH +failedMethodName+ ".png");
 		
 		try 
 		{
