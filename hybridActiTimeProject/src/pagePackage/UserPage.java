@@ -123,7 +123,6 @@ public class UserPage {
 		RetypePass.sendKeys(password);
 		firstName.sendKeys(firstname);
 		lastName.sendKeys(lastname);
-		ManageTask.click();
 		Thread.sleep(1000);
 		createUserButton.click();
 	}

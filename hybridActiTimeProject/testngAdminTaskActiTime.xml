@@ -4,8 +4,9 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="testPackage.ValidLoginTestCase"/>
-      <class name="testPackage.CreateUserTestCase"/>
       <class name="testPackage.CreateCustProjectTestCase"/>
+      <class name="testPackage.CreateUserTestCase"/>
+      
       <class name="testPackage.CreateTaskTestCase"/>
      
     </classes>

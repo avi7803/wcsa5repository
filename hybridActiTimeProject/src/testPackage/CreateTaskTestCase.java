@@ -12,6 +12,7 @@ import genericPackage.Flib;
 import pagePackage.HomePage;
 import pagePackage.LoginPage;
 import pagePackage.TasksPage;
+import pagePackage.TimeTrackPage;
 import pagePackage.UserPage;
 @Listeners(CustomListener.class)
 public class CreateTaskTestCase extends BaseTest {
@@ -23,25 +24,26 @@ public class CreateTaskTestCase extends BaseTest {
 	  Flib flib = new Flib();
 	  HomePage hm = new HomePage(driver);
 	  TasksPage ts = new TasksPage(driver);
-	  //UserPage us =new UserPage(driver);
+	  UserPage us =new UserPage(driver);
+	 
 	  
 	  lp.validLogin(flib.readExcelData(EXCEL_PATH, MANAGER_SHEETNAME, 1, 0),flib.readExcelData(EXCEL_PATH, MANAGER_SHEETNAME, 1, 1));
 	  
 	  
 	  
 	  //Click on Tasks page
-	  hm.clickOnTasksModule();
+	  //hm.clickOnTasksModule();
 	  
 	  //To create New Task
-	  ts.createNewTask(flib.readExcelData(EXCEL_PATH, CUST_PROJSHEETNAME, 1, 0), flib.readExcelData(EXCEL_PATH, CUST_PROJSHEETNAME, 1, 1), flib.readExcelData(EXCEL_PATH, TASK_SHEETNAME, 1, 0),flib.readExcelData(EXCEL_PATH, TASK_SHEETNAME, 1, 1), flib.readExcelData(EXCEL_PATH, TASK_SHEETNAME, 1, 2));
+	// ts.createNewTask(flib.readExcelData(EXCEL_PATH, CUST_PROJSHEETNAME, 1, 0), flib.readExcelData(EXCEL_PATH, CUST_PROJSHEETNAME, 1, 1), flib.readExcelData(EXCEL_PATH, TASK_SHEETNAME, 1, 0),flib.readExcelData(EXCEL_PATH, TASK_SHEETNAME, 1, 1), flib.readExcelData(EXCEL_PATH, TASK_SHEETNAME, 1, 2));
   
 	  //To click on Users Module
-	  hm.clickOnUsersModule();
+	// hm.clickOnUsersModule();
 	  
 	  //To create New Test Engineer
 	 // us.createTestEngineer(flib.readExcelData(EXCEL_PATH, TEST_ENGSHEETNAME, 1, 0),flib.readExcelData(EXCEL_PATH, TEST_ENGSHEETNAME, 1, 1), flib.readExcelData(EXCEL_PATH, TEST_ENGSHEETNAME, 1, 2), flib.readExcelData(EXCEL_PATH, TEST_ENGSHEETNAME, 1, 3));
 	  
-	 // hm.clickOnTimeTrack();
+	  hm.clickOnLogoutLink();
 	  
   }
 }

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 
-	@FindBy(xpath="//div[.='Time-Track']/../descendant::IMG") private WebElement TimeTrack;
+	@FindBy(xpath="/HTML/BODY/DIV/DIV[1]/TABLE/TBODY/TR[1]/TD[3]/A/DIV[2]/IMG") private WebElement TimeTrack;
 	@FindBy(xpath="//div[text()='Tasks']/following::img") private WebElement Tasks;
 	@FindBy(xpath="//div[text()='Reports']/following-sibling:img") private WebElement Reports;
 	@FindBy(xpath="//A[@class='content users']/descendant::IMG[@class='sizer']") private WebElement Users;
